@@ -1,13 +1,13 @@
 package ru.netology.service;
 
-import org.testng.annotations.Test;
-import static org.testng.Assert.assertEquals;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 public class CashbackHackServiceTest {
 
     // купил на 999 ответ 1
     @Test
-    public void test1 () {
+    public void test1() {
 
         CashbackHackService service = new CashbackHackService();
 
@@ -19,7 +19,7 @@ public class CashbackHackServiceTest {
 
     // купил на 1000 ответ 0
     @Test
-    public void shouldNotAskToIncreaseTheAmountIfDivisibleByBoundary  () {
+    public void shouldNotAskToIncreaseTheAmountIfDivisibleByBoundary() {
 
         CashbackHackService service = new CashbackHackService();
 
@@ -31,7 +31,7 @@ public class CashbackHackServiceTest {
 
     // купил на 1001 ответ 999
     @Test
-    public void test3 () {
+    public void test3() {
 
         CashbackHackService service = new CashbackHackService();
 
@@ -43,7 +43,7 @@ public class CashbackHackServiceTest {
 
     //середина диапазона
     @Test
-    public void test4 () {
+    public void test4() {
 
         CashbackHackService service = new CashbackHackService();
 
